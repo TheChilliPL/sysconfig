@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# locale.gen hash: {{ include "etc/locale.gen" | sha256sum }}
+
+# Regenerate locale settings after changing locale
+locale-gen
