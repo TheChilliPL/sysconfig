@@ -8,4 +8,4 @@ Target = /usr/share/applications/*.desktop
 [Action]
 Description = Updating the Kservice desktop file configuration cache...
 When = PostTransaction
-Exec = sudo -u "$(logname)" env XDG_MENU_PREFIX=arch- /usr/bin/kbuildsysoca6 --noincremental
+Exec = sudo -u "$(logname)" env XDG_MENU_PREFIX=arch- /usr/bin/kbuildsycoca6 --noincremental
