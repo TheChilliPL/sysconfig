@@ -1,0 +1,10 @@
+{{- if stat "/usr/bin/noctalia-greeter-session" }}
+[terminal]
+vt = 2
+
+[default_session]
+command = "/usr/bin/noctalia-greeter-session"
+user = "greeter"
+{{- else }}
+{{- fail "noctalia-greeter-session not found! Did not replace greetd config!" }}
+{{- end }}
